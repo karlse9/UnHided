@@ -1,4 +1,5 @@
-FROM python:3.11-slim-bullseye
+//FROM python:3.11-slim-bullseye
+FROM python:3.10-slim-buster
 WORKDIR /app
 RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/karlse9/UnHided.git .
